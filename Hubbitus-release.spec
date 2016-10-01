@@ -7,7 +7,7 @@ Summary(ru):	Конфигурация репозитория Hubbitus
 Group:		System Environment/Base
 License:		GPLv2+
 URL:			http://hubbitus.info/wiki/Repository
-Source0:		Hubbitus.repo.Fedora
+Source0:		Hubbitus.repo
 
 Requires:		fedora-release >= 25
 
