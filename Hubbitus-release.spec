@@ -1,5 +1,5 @@
 Name:		Hubbitus-release
-Version:		25
+Version:		27
 Release:		1
 Summary:		Hubbitus Repository Configuration
 Summary(ru):	Конфигурация репозитория Hubbitus
@@ -9,7 +9,7 @@ License:		GPLv2+
 URL:			http://hubbitus.info/wiki/Repository
 Source0:		Hubbitus.repo
 
-Requires:		fedora-release >= 25
+Requires:		fedora-release >= 27
 
 BuildArch:	noarch
 
@@ -36,7 +36,7 @@ Hubbitus репозиторий содержит в основном пакет�
 
 
 %install
-# yum
+# yum/dnf
 install -dm 755 %{buildroot}%{_sysconfdir}/yum.repos.d
 install -pm 644 %{SOURCE0} %{buildroot}%{_sysconfdir}/yum.repos.d/Hubbitus.repo
 
@@ -44,6 +44,12 @@ install -pm 644 %{SOURCE0} %{buildroot}%{_sysconfdir}/yum.repos.d/Hubbitus.repo
 %config(noreplace) %{_sysconfdir}/yum.repos.d/*
 
 %changelog
+* Sun Nov 12 2017 Pavel Alexeev <Pahan@Hubbitus.info> - 27-1
+- Update to Fedora 27.
+
+* Mon Oct 30 2017 Pavel Alexeev <Pahan@Hubbitus.info> - 26-1
+- Update to Fedora 26.
+
 * Sat Oct 01 2016 Pavel Alexeev <Pahan@Hubbitus.info> - 25-1
 - Split out into separate repository. Use branches instead of files mess.
 - Fedora25 build.
