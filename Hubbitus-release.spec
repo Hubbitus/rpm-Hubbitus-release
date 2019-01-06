@@ -1,5 +1,5 @@
 Name:		Hubbitus-release
-Version:		27
+Version:		29
 Release:		1
 Summary:		Hubbitus Repository Configuration
 Summary(ru):	Конфигурация репозитория Hubbitus
@@ -9,7 +9,7 @@ License:		GPLv2+
 URL:			http://hubbitus.info/wiki/Repository
 Source0:		Hubbitus.repo
 
-Requires:		fedora-release >= 27
+Requires:		fedora-release >= 29
 
 BuildArch:	noarch
 
@@ -44,6 +44,9 @@ install -pm 644 %{SOURCE0} %{buildroot}%{_sysconfdir}/yum.repos.d/Hubbitus.repo
 %config(noreplace) %{_sysconfdir}/yum.repos.d/*
 
 %changelog
+* Fri Jan 04 2019 Pavel Alexeev <Pahan@Hubbitus.info> - 29-1
+- Update to Fedora 29.
+
 * Sun Nov 12 2017 Pavel Alexeev <Pahan@Hubbitus.info> - 27-1
 - Update to Fedora 27.
 
