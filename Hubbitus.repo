@@ -3,8 +3,6 @@
 
 [Hubbitus]
 name=Hubbitus F$releasever
-baseurl=
-	http://rpm.hubbitus.info/Fedora$releasever/
-	http://rpm-mirror.hubbitus.info/Fedora$releasever/
+baseurl=http://rpm.hubbitus.info/Fedora$releasever/
 enabled = 1
 gpgcheck = 0
