@@ -1,5 +1,5 @@
 Name:		Hubbitus-release
-Version:		32
+Version:		34
 Release:		1
 Summary:		Hubbitus Repository Configuration
 Summary(ru):	Конфигурация репозитория Hubbitus
@@ -9,7 +9,7 @@ License:		GPLv2+
 URL:			http://hubbitus.info/wiki/Repository
 Source0:		Hubbitus.repo
 
-Requires:		fedora-release >= 32
+Requires:		fedora-release >= 34
 
 BuildArch:	noarch
 
@@ -44,6 +44,12 @@ install -pm 644 %{SOURCE0} %{buildroot}%{_sysconfdir}/yum.repos.d/Hubbitus.repo
 %config(noreplace) %{_sysconfdir}/yum.repos.d/*
 
 %changelog
+* Fri Jun 18 2021 Pavel Alexeev <Pahan@Hubbitus.info> - 34-1
+- Update to Fedora 34.
+
+* Sat Oct 31 2020 Pavel Alexeev <Pahan@Hubbitus.info> - 33-1
+- Update to Fedora 33.
+
 * Wed Mar 04 2020 Pavel Alexeev <Pahan@Hubbitus.info> - 32-1
 - Update to Fedora 32.
 
