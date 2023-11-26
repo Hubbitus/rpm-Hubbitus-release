@@ -45,7 +45,7 @@ install -pm 644 %{SOURCE0} %{buildroot}%{_sysconfdir}/yum.repos.d/Hubbitus.repo
 
 %changelog
 * Sun Nov 26 2023 Pavel Alexeev <Pahan@Hubbitus.info> - 38-1
-- Build for Fedora 38
+- Build for Fedora 38.
 
 * Fri Jun 18 2021 Pavel Alexeev <Pahan@Hubbitus.info> - 34-1
 - Update to Fedora 34.
