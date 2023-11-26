@@ -1,1 +1,1 @@
-fedpkg --release f38 local
+fedpkg --release f39 local
