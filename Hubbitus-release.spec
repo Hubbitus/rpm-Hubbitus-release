@@ -1,5 +1,5 @@
 Name:		Hubbitus-release
-Version:		34
+Version:		38
 Release:		1
 Summary:		Hubbitus Repository Configuration
 Summary(ru):	Конфигурация репозитория Hubbitus
@@ -44,6 +44,9 @@ install -pm 644 %{SOURCE0} %{buildroot}%{_sysconfdir}/yum.repos.d/Hubbitus.repo
 %config(noreplace) %{_sysconfdir}/yum.repos.d/*
 
 %changelog
+* Sun Nov 26 2023 Pavel Alexeev <Pahan@Hubbitus.info> - 35-1
+- Build for Fedora 38
+
 * Fri Jun 18 2021 Pavel Alexeev <Pahan@Hubbitus.info> - 34-1
 - Update to Fedora 34.
 
