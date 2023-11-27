@@ -1,6 +1,6 @@
 Name:		Hubbitus-release
-Version:		7
-Release:		5
+Version:		8
+Release:		1
 Summary:		Hubbitus Repository Configuration
 Summary(ru):	Конфигурация репозитория Hubbitus
 
@@ -9,7 +9,7 @@ License:		GPLv2+
 URL:			http://hubbitus.info/wiki/Repository
 Source0:		Hubbitus.repo
 
-Requires:		epel-release >= 7
+Requires:		epel-release >= 8
 
 BuildArch:	noarch
 
@@ -18,16 +18,14 @@ Hubbitus repository contain mostly packages what I prepare for importing into
 Fedoda and EPEL. Sometimes it may take very long time and packages may be
 installed from my repository.
 Additionally there present free packages, which can't be part of Fedora by some
-legal issues. F.e. dkms-tiacx - I have and use Dlink WiFi adapter on TI acx100
-(acx111) chipset, but Fedora don't accept anything kernel-modules.
+legal issues.
 
 %description -l ru
 Hubbitus репозиторий содержит в основном пакеты, которые я готовлю к импорту
 в Fedora и EPEL. Иногда этот процесс может занимать весьма продолжительное
 время, тогда они доступны отсюда.
 Дополнительно здесь свободные пакеты, по тем или иным причинам включение
-которых невозможно. Например dkms-tiacx. Я постоянно использую Dlink WiFi карту
-на TI acx100 (acx111) чипсете, но в Федоре запрещены пакеты с модулями ядра.
+которых невозможно.
 
 %prep
 %setup -c -T
@@ -43,6 +41,9 @@ install -pm 644 %{SOURCE0} %{buildroot}%{_sysconfdir}/yum.repos.d/Hubbitus.repo
 %config(noreplace) %{_sysconfdir}/yum.repos.d/*
 
 %changelog
+* Mon Nov 27 2023 Pavel Alexeev <Pahan@Hubbitus.info> - 8-1
+- Step to EPEL8.
+
 * Mon Jan 14 2019 Pavel Alexeev <Pahan@Hubbitus.info> - 7-5
 - Remove mirror.
 

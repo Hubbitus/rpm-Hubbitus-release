@@ -1,1 +1,1 @@
-fedpkg --dist epel7 local
+fedpkg --release epel8 local

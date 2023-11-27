@@ -3,6 +3,6 @@
 
 [Hubbitus]
 name=Hubbitus $releasever
-baseurl=http://rpm.hubbitus.info/epel$releasever/
+baseurl=https://rpm.hubbitus.info/epel$releasever/
 enabled=1
 gpgcheck=0
